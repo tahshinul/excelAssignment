@@ -42,7 +42,7 @@ public class assigned {
 	        shortestList.add(shortestString(y));
 	        longestList.add(longestString(y));
 			driver.findElement(By.id("APjFqb")).clear();
-			Thread.sleep(1000);
+			Thread.sleep(1100);
 		}
     	 writeToExcel(shortestList,3);
     	 writeToExcel(longestList,4);

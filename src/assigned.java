@@ -156,18 +156,11 @@ public class assigned {
            }
     
     
-    
-    
-    
-    
-    
-    
-    
     }
     
     
     
-    // Get the day of the week
+
     public static String day() {
     	LocalDate currentDate = LocalDate.now();
         DayOfWeek dayOfWeek = currentDate.getDayOfWeek();

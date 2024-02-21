@@ -123,10 +123,10 @@ public class assigned {
     	
         String dayOfWeek = day();
     	
-    	String filePath = "C:\\Users\\tahsh\\Downloads\\Excel.xlsx"; // Path to the Excel file
-        String sheetName = dayOfWeek; // Name of the sheet
-        int columnIndex = x; // Index of the column
-        int startRow = 2; // Index of the row
+    	String filePath = "C:\\Users\\tahsh\\Downloads\\Excel.xlsx"; 
+        String sheetName = dayOfWeek; 
+        int columnIndex = x; 
+        int startRow = 2; 
     
         try (FileInputStream fileIn = new FileInputStream(filePath);
                 Workbook workbook = new XSSFWorkbook(fileIn)) {
@@ -145,7 +145,6 @@ public class assigned {
                    cell.setCellValue(strings.get(i));
                }
 
-               // Write the workbook content back to the file
                try (FileOutputStream fileOut = new FileOutputStream(filePath)) {
                    workbook.write(fileOut);
                    System.out.println("Excel file has been updated successfully.");

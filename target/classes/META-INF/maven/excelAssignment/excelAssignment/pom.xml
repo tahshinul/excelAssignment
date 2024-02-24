@@ -25,11 +25,7 @@
     <artifactId>selenium-java</artifactId>
     <version>4.17.0</version>
 </dependency>
-
-	  
   </dependencies>
-  
-  
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
